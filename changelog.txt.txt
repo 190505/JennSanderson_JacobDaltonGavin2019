@@ -1,0 +1,12 @@
+v0.0.1 5/2
+- Created JennSandersonBot project file in Android Studio
+- Setup JennSandersonBot in Discord Application with a bot user
+- Created JennSandersonBot core bot project in IntelliJ IDEA
+- Added StartupMainActivity.java in Android Studio
+- Added layout startup_activity_main.xml in Android Studio
+
+v0.0.2 5/3
+- Added UI elements to startup_activity_main.xml layout file in Android Studio
+- Dependencies for Discord API added to core bot
+- Development on server hosting for core bot
+- Added color to Android project
