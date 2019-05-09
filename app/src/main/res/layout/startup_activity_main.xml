@@ -22,18 +22,16 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="424dp"
-        android:layout_height="155dp"
+        android:layout_width="418dp"
+        android:layout_height="137dp"
         android:layout_centerHorizontal="true"
         android:background="#7289DA"
         android:backgroundTint="#7289DA"
-        android:backgroundTintMode="#7289DA"
         android:foregroundTint="#7289DA"
         android:src="@drawable/LogoWhite"
-        android:theme="#7289DA"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="2dp" />
 
     <EditText
         android:id="@+id/editText2"

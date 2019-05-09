@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">JennSanderson_JacobDaltonGavin2019</string>
     <string name="buttonSubmit">Submit</string>
+    <string name="Bot_Interface">Bot Interface</string>
+    <string name="Music_Queue">Music Queue</string>
+    <string name="URL1">URL:</string>
+    <string name="URL2">URL:</string>
+    <string name="URL3">URL:</string>
+    <string name="URL4">URL:</string>
+    <string name="URL5">URL:</string>
+    <string name="Bot_Status">Bot Status</string>
+    <string name="Current_Status">Curent Status:</string>
+    <string name="Turn_bot_on_off">Turn bot on/off</string>
+    <string name="Bot_Information">Bot Information</string>
+    <string name="Name_ID">Name:ID</string>
 </resources>
