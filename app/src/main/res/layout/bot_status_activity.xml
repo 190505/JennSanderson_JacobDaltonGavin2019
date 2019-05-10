@@ -127,16 +127,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/Current_Status"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#FFFFFF"
+        android:textColor="#008000"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:layout_constraintVertical_bias="0.852"
         tools:ignore="MissingConstraints"
-        tools:text="Current Status:"
-        android:textAlignment="center"/>
+        tools:text="Current Status:" />
 
     <TextView
         android:id="@+id/textView10"
@@ -200,10 +200,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:switchTextAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center"
+        android:thumbTint="#7289DA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="511dp"
-        android:textAlignment="center"/>
+        tools:ignore="MissingConstraints"/>
+
 
 </android.support.constraint.ConstraintLayout>
 
