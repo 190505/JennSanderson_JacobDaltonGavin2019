@@ -13,4 +13,7 @@
     <string name="Turn_bot_on_off">Turn bot on/off</string>
     <string name="Bot_Information">Bot Information</string>
     <string name="Name_ID">Name:ID</string>
+    <string name="house">House</string>
+    <string name="rectangle_2">Rectangle 2</string>
+    <string name="rectangle_1">Rectangle 1</string>
 </resources>

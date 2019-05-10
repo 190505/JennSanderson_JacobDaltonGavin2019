@@ -7,34 +7,68 @@
     android:background="#2C2F33"
     android:visibility="visible">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1000dp"
+        android:layout_height="60dp"
+        android:src="@drawable/Capture"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-400dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="@string/rectangle_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1000dp"
+        android:layout_height="60dp"
+        android:src="@drawable/Capture"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-200dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="@string/rectangle_2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:src="@drawable/houselogo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:contentDescription="@string/house" />
+
     <TextView
         android:id="@+id/textView7"
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:text="@string/Bot_Interface"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#FFFFFF"
-        android:textSize="33sp"
+        android:textSize="28sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="0dp"
         tools:text="Bot Interface" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/Music_Queue"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         tools:ignore="MissingConstraints"
@@ -111,15 +145,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/Bot_Status"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="481dp"
-        tools:text="Bot Status"
-        android:textAlignment="center"/>
+        tools:text="Bot Status" />
 
     <TextView
         android:layout_width="160dp"
@@ -130,6 +165,7 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#008000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,14 +181,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/Turn_bot_on_off"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="584dp"
-        tools:text="Turn Bot On/Off"
-        android:textAlignment="center"/>
+        tools:text="Turn Bot On/Off" />
 
     <TextView
         android:layout_width="139dp"
@@ -160,15 +196,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/Bot_Information"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#FFFFFF"
+        android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="621dp"
-        tools:text="Bot Information"
-        android:textAlignment="center"/>
+        tools:text="Bot Information" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -176,15 +213,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/Name_ID"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#FFFFFF"
+        android:textSize="16sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="648dp"
-        tools:text="Name:ID"
-        android:textAlignment="center"/>
+        tools:text="Name:ID" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -204,9 +242,8 @@
         android:thumbTint="#7289DA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="511dp"
-        tools:ignore="MissingConstraints"/>
-
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="511dp" />
 
 </android.support.constraint.ConstraintLayout>
 
