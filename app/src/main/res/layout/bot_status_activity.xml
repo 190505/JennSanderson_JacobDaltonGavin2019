@@ -151,9 +151,10 @@
         android:textSize="20sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="481dp"
+        tools:layout_editor_absoluteY="472dp"
         tools:text="Bot Status" />
 
     <TextView
@@ -166,12 +167,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#008000"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.852"
         tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="547dp"
         tools:text="Current Status:" />
 
     <TextView
@@ -185,9 +185,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="584dp"
+        tools:layout_editor_absoluteY="518dp"
         tools:text="Turn Bot On/Off" />
 
     <TextView
@@ -219,9 +220,10 @@
         android:textSize="16sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="648dp"
+        tools:layout_editor_absoluteY="677dp"
         tools:text="Name:ID" />
 
     <android.support.constraint.Guideline
@@ -243,7 +245,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="511dp" />
+        tools:layout_editor_absoluteY="577dp" />
 
 </android.support.constraint.ConstraintLayout>
 
