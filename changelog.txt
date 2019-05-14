@@ -7,23 +7,25 @@ v0.0.1 5/2
 
 v0.0.2 5/3
 - Added UI elements to startup_activity_main.xml layout file in Android Studio
-- Dependencies for Discord API added to core bot
+- Dependencies for Discord API added to core bot (JDA)
 - Development on server hosting for core bot
 - Added color to Android project
 
-v0.0.2 5/6
--
+v0.0.3 5/6
+- Added new dependency LavaPlayer for music functionality in core bot
+- Created new layout file bot_status_activity.xml
+- Added layout elements to bot_status_activity.xml
 
+v0.0.4 5/7
+- Created new core bot files - Main.java, MusicManager.java, TrackScheduler.java, AuidoPlayerSendHandler
+- Added bot message listenting
 
+v0.0.5 5/8
+- Fixed layout in bot_status_activity.xml and startup_activity_main.xml
 
+v0.0.6 5/9
+- No new changes
 
-v0.0.2 5/7
+v0.0.7 5/10
+- Added music player functionality
 
-
-v0.0.2 5/8
-
-
-v0.0.2 5/9
-
-
-v0.0.2 5/10
