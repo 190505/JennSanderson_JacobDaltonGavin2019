@@ -1,7 +1,7 @@
 5-1-19 4pm-8pm - 4 hours spent on researching Discord bots
 5-10-19 6pm-8pm - 2 hours spent researching LavaPlayer dependency
 
-#Keystone Testing Window
+# Keystone Testing Window
 
 5-13-19 8am-11am - 3 hours spent during keystones to fix LavaPlayer not playing audio
 5-14-19 8am-11am - 3 hours spent on researching LavaPlayer
