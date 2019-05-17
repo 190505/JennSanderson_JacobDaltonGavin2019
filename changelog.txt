@@ -17,7 +17,7 @@ v0.0.3 5/6
 - Added layout elements to bot_status_activity.xml
 
 v0.0.4 5/7
-- Created new core bot files - Main.java, MusicManager.java, TrackScheduler.java, AuidoPlayerSendHandler
+- Created new core bot files - Main.java
 - Added bot message listenting
 
 v0.0.5 5/8
@@ -27,5 +27,25 @@ v0.0.6 5/9
 - No new changes
 
 v0.0.7 5/10
-- Added music player functionality
+- No new changes
+
+v0.0.8 5/13
+- Added music player functionality(Broken)
+- Added core bot files MusicManager.java, TrackScheduler.java, AuidoPlayerSendHandler.java
+
+v0.0.9 5/14
+- Added commands in core bot: !play
+
+v0.1.0 5/15
+- No new changes
+
+v0.1.1 5/16
+- Fixed music player functionality, now operational
+- Changed command !play to "Jenn play"
+- Added command "Jenn help" for displaying bot commands
+
+v0.1.2 5/17
+- Added new commands
+
+
 
