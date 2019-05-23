@@ -1,5 +1,6 @@
 package com.gminney.jennsanderson_jacobdaltongavin2019;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -51,21 +52,31 @@ public class BotStatusActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 System.out.println("Send button -  message sent");
-                message = urlTextField1.getText().toString().trim();
-                try {
-                    socket = new Socket(ip, 5000);
-                    printWriter = new PrintWriter(socket.getOutputStream());
-                    printWriter.write(message);
-                    printWriter.flush();
-                    printWriter.close();
-                    socket.close();
-                }
-                catch (IOException exception){
-
-                }
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.execute();
 
             }
         });
+    }
+
+    class SendMessage extends AsyncTask{
+
+        @Override
+        protected Object doInBackground(Object[] objects) {
+            message = urlTextField1.getText().toString().trim();
+            try {
+                socket = new Socket(ip, 5000);
+                printWriter = new PrintWriter(socket.getOutputStream());
+                printWriter.write(message);
+                printWriter.flush();
+                printWriter.close();
+                socket.close();
+            }
+            catch (IOException exception){
+                exception.printStackTrace();
+            }
+            return null;
+        }
     }
 
 }
