@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "11810908259",
+    "firebase_url": "https://jennsandersonbot.firebaseio.com",
+    "project_id": "jennsandersonbot",
+    "storage_bucket": "jennsandersonbot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11810908259:android:f3ab32008ab7e89f",
+        "android_client_info": {
+          "package_name": "com.gminney.jennsanderson_jacobdaltongavin2019"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11810908259-pjham0f9uoncj7p3ljiqus8cs146a9as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCunFiE29NIS4yLpiVz3Rj9oZjDY7PhPrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11810908259-pjham0f9uoncj7p3ljiqus8cs146a9as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

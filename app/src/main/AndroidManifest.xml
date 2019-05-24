@@ -21,6 +21,11 @@
             android:name=".BotStatusActivity"
             android:label="Bot Status">
         </activity>
+        <service android:name="com.backendless.push.BackendlessFCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
