@@ -30,26 +30,25 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
+/////////// BotStatusActivity is the main screen that reveals bot information as well as a music queue and chat  ////////////////////////////////////////////////////////
 public class BotStatusActivity extends AppCompatActivity {
-
+    /////////// Variable instantiation for server communications, strings, and elements /////////////////////////////////////////////////////////////////////////////////
     private static Socket socket;
-    private static ServerSocket serverSocket;
-    private static InputStreamReader inputStreamReader;
-    private static BufferedReader bufferedReader;
     private static PrintWriter printWriter;
     private String message;
-    private static String ip = "172.20.10.147";
-
+    private String serverMessage;
+    private static String ip = "73.130.144.51";
     private EditText urlTextField1;
     private EditText urlTextField2;
     private EditText urlTextField3;
     private EditText urlTextField4;
     private EditText urlTextField5;
+    private EditText editText;
     private Button button;
-    private String API_KEY;
-    private String APP_ID;
+    private Button button2;
 
+/////////// onCreate method sets activity to NO TITLE and layout to bot_status_activity xml ////////////////////////////////////////////////////////////////////////////
+/////////// Assigns editText and buttons to code ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,19 +56,20 @@ public class BotStatusActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.bot_status_activity);
 
-        API_KEY = getString(R.string.API_KEY);
-        APP_ID = getString(R.string.APP_ID);
-
         urlTextField1 = findViewById(R.id.urlText1);
         urlTextField2 = findViewById(R.id.urlText2);
         urlTextField3 = findViewById(R.id.urlText3);
         urlTextField4 = findViewById(R.id.urlText4);
         urlTextField5 = findViewById(R.id.urlText5);
+        editText = findViewById(R.id.editText);
         button = findViewById(R.id.button);
+        button2 = findViewById(R.id.button2);
 
+/////////// Unused code for backendless and firebase ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /*
         Backendless.initApp(getApplicationContext(), APP_ID, API_KEY);
-        //FirebaseApp.initializeApp
-        final PublishOptions publishOptions = new PublishOptions();
+        FirebaseApp.initializeApp(this);
+
         List<String> channels = new ArrayList<String>();
         channels.add( "androidMessage" );
         Backendless.Messaging.registerDevice(channels, new AsyncCallback<DeviceRegistrationResult>() {
@@ -84,31 +84,37 @@ public class BotStatusActivity extends AppCompatActivity {
                 System.out.println("Backendless fault : " + fault);
             }
         });
+        */
 
-
+/////////// onClickListener for button to queue music through editText to server/////////////////////////////////////////////////////////////////////////////////////////
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Send button -  data sent");
-                message = urlTextField1.getText().toString().trim();
-                Backendless.Messaging.publish("androidMessage", message, publishOptions);
-
-                //SendMessage sendMessage = new SendMessage();
+                System.out.println("Send button -  link sent");
+                serverMessage = urlTextField1.getText().toString().trim();
+                message = "+++" + serverMessage;
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.execute();
             }
         });
-
-
-
-
+/////////// onClickListenter for button to send chat messages to server /////////////////////////////////////////////////////////////////////////////////////////////////
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Send button -  chat sent");
+                serverMessage = editText.getText().toString().trim();
+                message = "---" + serverMessage;
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.execute();
+            }
+        });
     }
 
-
-}
-    /*class SendMessage extends AsyncTask{
-
+/////////// Anonymous inner class off of the main thread that sends messages to a server using a socket /////////////////////////////////////////////////////////////////
+    class SendMessage extends AsyncTask{
+/////////// Creates a socket with an ip address and port number, writes information, sends, and closes the socket ////////////////////////////////////////////////////////
         @Override
         protected Object doInBackground(Object[] objects) {
-            message = urlTextField1.getText().toString().trim();
             try {
                 socket = new Socket(ip, 5000);
                 printWriter = new PrintWriter(socket.getOutputStream());
@@ -117,12 +123,13 @@ public class BotStatusActivity extends AppCompatActivity {
                 printWriter.close();
                 socket.close();
             }
+/////////// Error handling for bad/no connection //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             catch (IOException exception){
                 exception.printStackTrace();
+                Toast.makeText(getApplicationContext(), R.string.badconnection, Toast.LENGTH_LONG);
             }
             return null;
         }
     }
 
 }
-*/

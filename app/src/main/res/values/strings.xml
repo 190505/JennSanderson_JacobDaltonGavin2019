@@ -8,14 +8,13 @@
     <string name="URL3">URL:</string>
     <string name="URL4">URL:</string>
     <string name="URL5">URL:</string>
-    <string name="Bot_Status">Bot Status</string>
-    <string name="Current_Status">Curent Status:</string>
-    <string name="Turn_bot_on_off">Turn bot on/off</string>
+    <string name="Bot_Status">Talk with Jenn</string>
     <string name="Bot_Information">Bot Information</string>
-    <string name="Name_ID">Name:ID</string>
+    <string name="Name_ID">JennSandersonBot</string>
     <string name="house">House</string>
     <string name="rectangle_2">Rectangle 2</string>
     <string name="rectangle_1">Rectangle 1</string>
     <string name="password">JacobGavinDalton2019</string>
     <string name="music_queue">Music Queue</string>
+    <string name="badconnection">"Unable to connect to server"</string>
 </resources>
