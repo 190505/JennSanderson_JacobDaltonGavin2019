@@ -14,3 +14,8 @@
 
 5-17-19 8am-11am - 3 hours spent on research for App to server interfacing
 
+5-23-19 1:10pm-2:40pm - 1hour 30mins spent on cleaning up and server researching
+
+5-28-19 1pm - 9pm Wroking out kinks and finalizing 
+
+Total = 29 hours overtime
